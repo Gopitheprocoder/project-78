@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+        <hr>
+        <hr>
+<img id="f" src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg"> 
+<h3 id="one">Our Family Book</h3>
+<button type="button" onclick="next()">Next</button>
+<script>
+    var names=["My Grandfather(Venkatash Murthy)",
+    "My Grand Mother(Vijaya Kumari)",
+    "My Dad (Kedarnath)",
+    "My Mom (Mythri)",
+    "Me (Gopi)",]
+    var images=[ "Grandpa.jpg",
+    "Granny.jpg",
+    "dad.jpg",
+    "mom.jpg",
+  "IMG_1446.JPG"];
+var i=0;
+function next(){
+    document.getElementById("one").innerHTML=names[i];
+    document.getElementById("f").src=images[i];
+    i++;
+    if (i==6){
+        i=0;
+    }
+}
+</script>
+</body>
+</html>
